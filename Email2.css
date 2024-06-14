@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+}
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, Sans-serif , sans-serif;
+    display: grid ;
+    place-items: center;
+}
+h1{
+    margin-bottom: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 1.5rem;
+    background: transparent;
+    border: 1px solid black;
+}
+textarea{
+    height: 6rem;
+}
+button{
+    width: 8rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    background: #673de6;
+    color: white;
+}
+a{
+    color:black;
+    font-style: italic;
+}
+ p a:hover {
+    color: deeppink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

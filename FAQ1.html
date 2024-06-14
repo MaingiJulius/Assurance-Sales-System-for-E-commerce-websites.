@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , user-scalable=no
+, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+
+    <link rel="stylesheet" href="FAQ2.css">
+
+
+
+
+
+</head>
+<body>
+
+<!--Navbar-->
+
+<div class ="navbar">
+    <div class="logo">
+        <a href="project.html"><img src ="images/poster2.png" width="225px"></a>
+    </div>
+
+    <nav>
+        <ul    id="MenuItems">
+            <li> <a href="project.html">Home  </a>           </li>
+            <li> <a href="products.html">Products</a>         </li>
+            <li> <a href="products-details.html"> Details </a>          </li>
+            <li> <a href="contact.html">Contact  </a>        </li>
+            <li> <a href="account.html">Account  </a>        </li>
+            <li> <a href="Feedback.html"> Feedback</a></li>
+            <li> <a href="AboutUs.html"> About Us</a></li>
+            <li> <a href="FAQ1.html"> Frequently Asked Questions </a></li>
+
+        </ul>
+    </nav>
+
+    <a href="cart.html"><img src="images/cart1.png" width="30px" height="30px"></a>
+
+    <img src="images/menu.png" class="menu-icon"  onclick="menutoggle()">
+
+</div>
+
+
+<!--End of Navbar-->
+
+
+
+<section>
+
+
+
+    <div class="container1">
+
+        <div class="header">
+
+            <h1> FREQUENTLY ASKED QUESTIONS </h1>
+
+            <P> KINDLY FIND ANSWERS TO MANY QUESTIONS BELOW </P>
+
+        </div>
+
+
+        <div class="accordion">
+
+    <div class="accordion-item" id="question1">
+
+    <a class="accordion-link" href="#question1">
+
+        How Often Do You Buy Phones?
+        <ion-icon name="add-outline"></ion-icon>
+        <ion-icon name="remove-outline"></ion-icon>
+
+    </a>
+
+        <div class="answer">
+<p>Kindly Find answers to your questions below</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="accordion-item" id="question2">
+
+        <a class="accordion-link" href="#question2">
+
+            How Often Do You Buy Phones?
+            <ion-icon name="add-outline"></ion-icon>
+            <ion-icon name="remove-outline"></ion-icon>
+
+        </a>
+
+        <div class="answer">
+           <p> Kindly Find answers to your questions below</p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="accordion-item" id="question3">
+
+        <a class="accordion-link" href="#question3">
+
+            How Often Do You Buy Phones?
+            <ion-icon name="add-outline"></ion-icon>
+            <ion-icon name="remove-outline"></ion-icon>
+
+        </a>
+
+        <div class="answer">
+         <p>   Kindly Find answers to your questions below</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="accordion-item" id="question4">
+
+        <a class="accordion-link" href="#question4">
+
+            How Often Do You Buy Phones?
+            <ion-icon name="add-outline"></ion-icon>
+            <ion-icon name="remove-outline"></ion-icon>
+
+        </a>
+
+        <div class="answer">
+          <p>  Kindly Find answers to your questions below</p>
+
+        </div>
+
+
+    </div>
+
+            <div class="accordion-item" id="question5">
+
+                <a class="accordion-link" href="#question5">
+
+                    How Often Do You Buy Phones?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+
+                </a>
+
+                <div class="answer">
+                    <p>  Kindly Find answers to your questions below</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="accordion-item" id="question6">
+
+                <a class="accordion-link" href="#question6">
+
+                    How Often Do You Buy Phones?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+
+                </a>
+
+                <div class="answer">
+                    <p>  Kindly Find answers to your questions below</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="accordion-item" id="question7">
+
+                <a class="accordion-link" href="#question7">
+
+                    How Often Do You Buy Phones?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+
+                </a>
+
+                <div class="answer">
+                    <p>  Kindly Find answers to your questions below</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="accordion-item" id="question8">
+
+                <a class="accordion-link" href="#question8">
+
+                    How Often Do You Buy Phones?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+
+                </a>
+
+                <div class="answer">
+                    <p>  Kindly Find answers to your questions below</p>
+
+                </div>
+
+
+            </div>
+
+
+</div>
+    </div>
+
+
+</section>
+
+
+
+
+
+<!--Ion Icons Installation-->
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+<!-- Add below if i want to hide content when i press - button / icon -->
+
+<!--
+
+<script>
+
+    var acc = document.getElementsByClassName("accordion-link") ;
+    var i;
+
+    for(i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function (){
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+
+            var answer = this.nextElementSibling;
+
+            if (answer.style.display === "block"){
+                answer.style.display = "none";
+            }else {
+                answer.style.display = "block";
+            }
+
+        });
+    }
+
+</script>
+
+-->
+
+
+</body>
+</html>

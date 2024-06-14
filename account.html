@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Account Simplistic's World </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #ffffff; /* Set your desired background color */
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/poster2.png" width="225px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+
+                <li> <a href="project.html">Home  </a>           </li>
+                <li> <a href="products.html">Products</a>         </li>
+                <li> <a href="products-details.html"> Details </a>          </li>
+                <li> <a href="contact.html">Contact  </a>        </li>
+                <li> <a href="account.html">Account  </a>        </li>
+                <li> <a href="Feedback.html"> Feedback</a></li>
+                <li> <a href="AboutUs.html"> About Us</a></li>
+                <li> <a href="FAQ1.html"> Frequently Asked Questions </a></li>
+
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart1.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/brand6.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="toggleForm('login')"> Login</span>
+                        <span onclick="toggleForm('register')"> Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form  class = "login-form"  action="account.php" method="POST">
+                        <input type="text" name="LoginUsername" placeholder="Username" required>
+                        <input type="password" name="LoginPassword" placeholder="Password" required>
+                        <button type="submit" class="btn"  name = "login" >Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+                    <form  class = "reg-form"  action="account.php" method="POST">
+                        <input type="text" name="RegUsername" placeholder="Username" required>
+                        <input type="email" name="RegEmail" placeholder="Email" required>
+                        <input type="password" name="RegPassword" placeholder="Password" required>
+                        <input type="password" name="RegConfirmPassword" placeholder="Confirm Password" required>
+                        <button type="submit" class="btn" name="save">Register</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---footer--->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download for Android and iOS</p>
+                <div class="app-logo">
+
+                    <a href="#"><img src="images/playstore.png"></a>
+                    <a href="#" ><img src="images/appstore.png"></a>
+
+                </div>
+
+            </div>
+            <div class="footer-col-2">
+                <img src="images/company4.png">
+                <p>Download for Android and iOS</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <a href="#">  <li>Coupons</li> </a>
+                    <a href="#"> <li>Blog Post</li> </a>
+                    <a href="#"> <li>Return Policy</li> </a>
+                    <a href="#">  <li>Join</li> </a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <a href="#">   <li>Facebook</li> </a>
+                    <a href="#">   <li>Instagram</li> </a>
+                    <a href="#">     <li>Twitter</li> </a>
+                    <a href="#">    <li>YouTube</li> </a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class = "copyright">  Copyright 2024 @ Julius      </p>
+    </div>
+</div>
+
+<!-- JS for toggle menu -->
+
+<script>
+
+
+
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight === "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+
+    function toggleForm(type) {
+        var loginForm = document.querySelector('form[action="account.php"][method="POST"]:nth-of-type(1)');
+        var registerForm = document.querySelector('form[action="account.php"][method="POST"]:nth-of-type(2)');
+        var indicator = document.getElementById('Indicator');
+
+        if (type === 'login') {
+            loginForm.style.transform = "translateX(300px)";
+            registerForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(75px)";
+        }
+
+        if (type === 'register') {
+            loginForm.style.transform = "translateX(0px)";
+            registerForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(180px)";
+        }
+    }
+</script>
+
+<!---
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+--->
+
+</body>
+</html>

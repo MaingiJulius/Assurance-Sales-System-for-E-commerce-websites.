@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content = "width=device-width,
+      initial scale = 1.0">
+
+    <title> About Us </title>
+    <link rel ="stylesheet" href = "AboutNew.css">
+    <link rel="stylesheet" href="footer.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:
+     wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/@fort
+	 awesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+</head>
+
+
+<body>
+
+
+<!--
+
+<section class = "sub-header">
+
+    <nav>
+
+        <a href = "index.html"> <img src = "images/uni1.png"></a>
+        <div class = "nav-links" id = "navLinks">
+
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li> <a href = "">HOME</a></li>
+                <li> <a href = "">ABOUT</a></li>
+                <li> <a href = "">COURSE</a></li>
+                <li> <a href = "">BLOG</a></li>
+                <li> <a href = "">CONTACT</a></li>
+            </ul>
+
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+
+    <h1> About Us </h1>
+
+</section>
+
+-->
+
+<!--Navbar-->
+
+<div class ="navbar" >
+    <div class="logo">
+        <a href="project.html"><img src ="images/poster2.png" width="225px"></a>
+    </div>
+
+    <nav>
+        <ul    id="MenuItems">
+            <li> <a href="project.html">Home  </a>           </li>
+            <li> <a href="products.html">Products</a>         </li>
+            <li> <a href="products-details.html"> Details </a>          </li>
+            <li> <a href="contact.html">Contact  </a>        </li>
+            <li> <a href="account.html">Account  </a>        </li>
+            <li> <a href="Feedback.html"> Feedback</a></li>
+            <li> <a href="AboutUs.html"> About Us</a></li>
+            <li> <a href="FAQ1.html"> Frequently Asked Questions </a></li>
+
+        </ul>
+    </nav>
+
+    <a href="cart.html"><img src="images/cart1.png" width="30px" height="30px"></a>
+
+    <img src="images/menu.png" class="menu-icon"  onclick="menutoggle()">
+
+</div>
+
+
+<!--End of Navbar-->
+
+
+
+<section class = "about-col">
+    <div class = "blog-about">
+<img src = "images/CEO.png">
+        </div>
+
+        <div class="blog-about1">
+        <h1> Read Below more </h1>
+<p> We are one of the best phone selling companies in East and Central Africa <br> I as the CEO or
+Managing director of this company started in 2015 as an employee in a samsung selling brand
+<br> I import my products from al around the world and through my
+experience, I am able to bring quality products and have the skill to detect rejects
+<br> Due to the increase and rise of my business , I was able to
+hire some great ladies and gentlemen to help me in delivering quality services
+to my customers <br> You can find some images of my colleages and their contacts and names
+have also been outlined</p>
+    </div>
+
+
+
+
+
+</section>
+
+
+<!---blog page content--->
+
+<section class = "blog-content">
+
+    <div class = "row">
+        <div class = "blog-left">
+            <img src = "images/About1.png">
+            <h2> This is Our Team</h2>
+            <p> Come and See what we ve got</p>
+
+        </div>
+
+            <!--What i need Comment Box --->
+
+            <!--
+
+            <div class = "comment-box">
+                <h3> Leave a comment</h3>
+
+                <form class = "comment-form">
+                    <input type = "text" placeholder = "Enter Name">
+                    <input type = "email" placeholder = "Enter Email">
+
+                    <label>
+                        <textarea rows = "5" input type="text" placeholder="Your comment"> </textarea>
+                    </label>
+
+                    <button type="submit" class = "hero-btn red-btn"> POST COMMENT </button>
+
+                </form>
+
+            </div>
+
+            -->
+
+
+
+        <div class = "blog-right">
+            <img src = "images/About1.png">
+            <h2> All work and no play makes Jack a dull boy</h2>
+        </div>
+
+        <div class = "comment-box">
+            <h3> Leave a comment</h3>
+
+            <form class = "comment-form" action="aboutUs.php" method="post">
+                <input type = "text"  name="name" placeholder = "Enter Name" required>
+                <input type = "email" name="email" placeholder = "Enter Email" required>
+
+                <label>
+                    <textarea rows = "5"  type="text" name="comment" placeholder="Your comment" required> </textarea>
+                </label>
+
+                <button type="submit"  name="save"  class = "hero-btn red-btn"> POST COMMENT </button>
+
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+<!---footer--->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download for Android and iOS</p>
+                <div class="app-logo">
+
+                    <a href="#"><img src="images/playstore.png"></a>
+                    <a href="#" ><img src="images/appstore.png"></a>
+
+                </div>
+
+            </div>
+            <div class="footer-col-2">
+                <img src="images/company4.png">
+                <p>Download for Android and iOS</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <a href="#">  <li>Coupons</li> </a>
+                    <a href="#"> <li>Blog Post</li> </a>
+                    <a href="#"> <li>Return Policy</li> </a>
+                    <a href="#">  <li>Join</li> </a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <a href="#">   <li>Facebook</li> </a>
+                    <a href="#">   <li>Instagram</li> </a>
+                    <a href="#">     <li>Twitter</li> </a>
+                    <a href="#">    <li>YouTube</li> </a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class = "copyright">  Copyright 2024 @ Julius      </p>
+    </div>
+</div>
+
+
+
+<!---javascript for toggle menu--->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+

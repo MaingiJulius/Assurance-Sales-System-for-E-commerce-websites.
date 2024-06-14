@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+ <meta charset = "UTF-8">
+ <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+ <title> Responsive Contact Us Page         </title>
+
+  <link rel="stylesheet" href="footer.css">
+
+
+ <link rel = "stylesheet" href = "contact.css">
+</head>
+
+<body>
+
+<!--Navbar-->
+
+<div class ="navbar">
+ <div class="logo">
+  <a href="project.html"><img src ="images/poster2.png" width="225px"></a>
+ </div>
+
+ <nav>
+  <ul    id="MenuItems">
+   <li> <a href="project.html">Home  </a>           </li>
+   <li> <a href="products.html">Products</a>         </li>
+   <li> <a href="products-details.html"> Details </a>          </li>
+   <li> <a href="contact.html">Contact  </a>        </li>
+   <li> <a href="account.html">Account  </a>        </li>
+   <li> <a href="Feedback.html"> Feedback</a></li>
+   <li> <a href="AboutUs.html"> About Us</a></li>
+   <li> <a href="FAQ1.html"> Frequently Asked Questions </a></li>
+
+  </ul>
+ </nav>
+
+ <a href="cart.html"><img src="images/cart1.png" width="30px" height="30px"></a>
+
+ <img src="images/menu.png" class="menu-icon"  onclick="menutoggle()">
+
+</div>
+
+
+<!--End of Navbar-->
+
+<div class = "contactUs" >
+ <div class = "title">
+  <h2>    Get In Touch         </h2>
+ </div>
+
+ <div class = "box">
+
+  <!--Form--->
+  <div class = "contact form">
+
+   <h3> Send A Message </h3>
+
+
+   <form action="conta.php" method="POST">
+
+
+
+    <div class = "formBox">
+
+     <div class = "row50">
+
+      <div class = "inputBox">
+
+       <span> First Name  </span>
+       <input type = "text" name = "name1" placeholder = "John" required>
+
+      </div>
+
+      <div class = "inputBox">
+
+       <span> Last Name  </span>
+       <input type = "text"  name="name2" placeholder = "Claude" required>
+
+      </div>
+
+     </div>
+
+     <div class = "row50">
+
+      <div class = "inputBox">
+
+       <span> Email  </span>
+       <input type = "email" name="email" placeholder = "John@gmail.com" required>
+
+      </div>
+
+      <div class = "inputBox">
+
+       <span> Mobile  </span>
+       <input type = "text" name="phone" placeholder = "+254 765432123" required>
+
+      </div>
+
+     </div>
+
+     <div class = "row100">
+
+      <div class = "inputBox">
+
+       <span> Message  </span>
+       <textarea  name="message" placeholder = "Write your message here..." required>              </textarea>
+
+      </div>
+     </div>
+
+     <div class = "row100">
+
+      <div class = "inputBox">
+
+       <input type = "submit"  name="save" value = "Send">
+
+      </div>
+     </div>
+
+
+
+
+
+    </div>
+   </form>
+
+  </div>
+  <!---info box--->
+  <div class = "contact info">
+   <h3>  Contact Info         </h3>
+   <div class = "infoBox">
+    <div>
+     <span> <ion-icon name="location"></ion-icon>  </span>
+     <p>  ParkInn Lower G6 <br> NAIROBI    </p>
+
+
+    </div>
+
+    <div>
+     <span> <ion-icon name="mail"></ion-icon> </span>
+     <a href = "mailto:maingijulius09@gmail.com"> maingijulius09@gmail.com </a>
+
+
+    </div>
+
+    <div>
+     <span> <ion-icon name="call"></ion-icon> </span>
+     <a href = "tel:+254746627517"> +254 746627517 </a>
+
+    </div>
+
+    <!-- Social Media Link-->
+
+    <ul class = "sci">
+     <li> <a href = "#"> <ion-icon name="logo-facebook"></ion-icon> </a></li>
+     <li> <a href = "#"> <ion-icon name="logo-twitter"></ion-icon> </a></li>
+     <li> <a href = "#"><ion-icon name="logo-linkedin"></ion-icon> </a></li>
+     <li> <a href = "#"><ion-icon name="logo-instagram"></ion-icon> </a></li>
+    </ul>
+
+
+   </div>
+
+  </div>
+  <!---Map--->
+  <div class = "contact map">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.393235396092!2d36.789989646859276!3d-1.2634507269897985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f176a5d92e93f%3A0x37dcc27233614c15!2sPark%20Inn%20By%20Radisson%20Nairobi%20Westlands!5e0!3m2!1sen!2ske!4v1706190022708!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+ </div>
+</div>
+
+<!---footer--->
+<div class="footer">
+ <div class="container">
+  <div class="row">
+
+   <div class="footer-col-1">
+    <h3>Download Our App</h3>
+    <p>Download for Android and iOS</p>
+    <div class="app-logo">
+
+     <a href="#"><img src="images/playstore.png"></a>
+     <a href="#" ><img src="images/appstore.png"></a>
+
+    </div>
+
+   </div>
+   <div class="footer-col-2">
+    <img src="images/company4.png">
+    <p>Download for Android and iOS</p>
+   </div>
+   <div class="footer-col-3">
+    <h3>Useful Links</h3>
+    <ul>
+     <a href="#">  <li>Coupons</li> </a>
+     <a href="#"> <li>Blog Post</li> </a>
+     <a href="#"> <li>Return Policy</li> </a>
+     <a href="#">  <li>Join</li> </a>
+    </ul>
+   </div>
+   <div class="footer-col-4">
+    <h3>Follow us</h3>
+    <ul>
+     <a href="#">   <li>Facebook</li> </a>
+     <a href="#">   <li>Instagram</li> </a>
+     <a href="#">     <li>Twitter</li> </a>
+     <a href="#">    <li>YouTube</li> </a>
+    </ul>
+   </div>
+  </div>
+  <hr>
+  <p class = "copyright">  Copyright 2024 @ Julius      </p>
+ </div>
+</div>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+
+</html>

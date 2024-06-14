@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Html form submission</title>
+    <link rel="stylesheet" href="Email2.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1> Form Submission to Email </h1>
+
+    <form action="Email2.php" method="POST">
+
+
+        <input type="text" name="Name"  id="Name" placeholder="Full Name" required>
+        <input type="email" name="Email"  id="Email" placeholder="Email" required>
+
+        <select name="Continent" id="Continent">
+
+            <option> Africa </option>
+            <option> Asia </option>
+            <option> Australia </option>
+            <option> North America </option>
+            <option> South America </option>
+            <option> Europe </option>
+
+        </select>
+
+        <textarea name="Message" id="Message" placeholder="Message" required></textarea>
+
+<button type="submit"> SEND </button>
+
+
+    </form>
+
+</div>
+
+</body>
+</html>
